@@ -1,0 +1,610 @@
+/* ==========================================================
+   LARGE LAPTOPS
+========================================================== */
+
+@media (max-width: 1200px) {
+
+    .container {
+        width: min(1100px, 92%);
+    }
+
+}
+
+/* ==========================================================
+   TABLETS
+========================================================== */
+
+@media (max-width: 992px) {
+
+    :root {
+
+        --section-padding: 80px;
+
+        --fs-3xl: 3.8rem;
+        --fs-2xl: 3rem;
+        --fs-xl: 2.2rem;
+
+    }
+
+    .grid-2 {
+        grid-template-columns: 1fr;
+        gap: var(--space-7);
+    }
+
+    .grid-3 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+/* ==========================================================
+   MOBILE
+========================================================== */
+
+@media (max-width: 768px) {
+
+    :root {
+
+        --section-padding: 64px;
+
+        --fs-3xl: 3rem;
+        --fs-2xl: 2.5rem;
+        --fs-xl: 2rem;
+
+    }
+
+    .container {
+        width: 92%;
+    }
+
+    .grid-3 {
+        grid-template-columns: 1fr;
+    }
+
+    .btn {
+
+        width: 100%;
+
+        justify-content: center;
+
+    }
+
+    .section-title {
+
+        font-size: var(--fs-xl);
+
+    }
+
+}
+
+/* ==========================================================
+   SMALL MOBILE
+========================================================== */
+
+@media (max-width: 576px) {
+
+    :root {
+
+        --fs-3xl: 2.5rem;
+        --fs-2xl: 2rem;
+        --fs-xl: 1.8rem;
+
+    }
+
+    body {
+
+        font-size: .95rem;
+
+    }
+
+}
+
+/* ==========================================================
+   MOBILE NAVIGATION
+========================================================== */
+
+@media(max-width:768px){
+
+    .menu-toggle{
+
+        display:flex;
+
+    }
+
+    .nav-links{
+
+        position:absolute;
+
+        top:100%;
+
+        left:0;
+
+        width:100%;
+
+        background:var(--bg-secondary);
+
+        border-top:1px solid var(--border);
+
+        display:flex;
+
+        flex-direction:column;
+
+        gap:0;
+
+        max-height:0;
+
+        overflow:hidden;
+
+        transition:var(--transition);
+
+    }
+
+    .nav-links.active{
+
+        max-height:420px;
+
+        padding:1rem 0;
+
+    }
+
+    .nav-links li{
+
+        width:100%;
+
+    }
+
+    .nav-link{
+
+        display:block;
+
+        width:100%;
+
+        padding:1rem 1.5rem;
+
+    }
+
+}
+
+/* ==========================================================
+   HERO RESPONSIVE
+========================================================== */
+
+@media(max-width:992px){
+
+    .hero-wrapper{
+
+        grid-template-columns:1fr;
+
+        gap:4rem;
+
+    }
+
+    .hero-quote{
+
+        align-items:flex-start;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    #hero{
+
+        min-height:auto;
+
+        padding-top:140px;
+
+    }
+
+    .hero-title{
+
+        font-size:2.8rem;
+
+    }
+
+    .hero-buttons{
+
+        flex-direction:column;
+
+    }
+
+    .tech-stack{
+
+        gap:1rem;
+
+    }
+
+    .hero-quote blockquote{
+
+        font-size:2.2rem;
+
+    }
+
+}
+
+/* ==========================================================
+   ABOUT RESPONSIVE
+========================================================== */
+
+@media(max-width:992px){
+
+    .about-top{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .about-image{
+
+        max-width:420px;
+
+        margin:auto;
+
+    }
+
+    .about-info{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .about-title{
+
+        font-size:2.3rem;
+
+    }
+
+    .about-info{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .about-status{
+
+        flex-direction:column;
+
+        gap:.75rem;
+
+    }
+
+}
+
+/* ==========================================================
+   TOOLBOX RESPONSIVE
+========================================================== */
+
+@media(max-width:768px){
+
+    .tool-row{
+
+        grid-template-columns:1fr;
+
+        gap:1rem;
+
+    }
+
+}
+
+/* ==========================================================
+   PROJECTS RESPONSIVE
+========================================================== */
+
+@media(max-width:992px){
+
+    .project,
+    .project.reverse{
+
+        grid-template-columns:1fr;
+
+        gap:2rem;
+
+    }
+
+    .project.reverse .project-image,
+    .project.reverse .project-content{
+
+        order:unset;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .project{
+
+        margin:4rem auto;
+
+    }
+
+    .project-number{
+
+        font-size:3rem;
+
+    }
+
+    .project-content h3{
+
+        font-size:2rem;
+
+    }
+
+}
+
+/* ==========================================================
+   JOURNEY RESPONSIVE
+========================================================== */
+
+@media(max-width:768px){
+
+    .journey-card{
+
+        grid-template-columns:1fr;
+
+        gap:1.25rem;
+
+        padding:24px;
+
+    }
+
+    .journey-left{
+
+        flex-direction:row;
+
+        align-items:center;
+
+        gap:14px;
+
+    }
+
+    .journey-year{
+
+        margin-top:0;
+
+    }
+
+    .journey-stage{
+
+        margin-top:0;
+
+    }
+
+}
+
+/* ==========================================================
+   GITHUB RESPONSIVE
+========================================================== */
+
+@media(max-width:992px){
+
+    .github-wrapper{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .github-profile{
+
+        position:static;
+
+    }
+
+}
+
+/* ==========================================================
+   STATS RESPONSIVE
+========================================================== */
+
+@media(max-width:992px){
+
+    .stats-wrapper{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+    .stat:nth-child(2){
+
+        border-right:none;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .stats-wrapper{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .stat{
+
+        border-right:none !important;
+
+        border-bottom:1px solid var(--border);
+
+    }
+
+    .stat:last-child{
+
+        border-bottom:none;
+
+    }
+
+}
+
+/* ==========================================================
+   CERTIFICATIONS RESPONSIVE
+========================================================== */
+
+@media(max-width:768px){
+
+    .certificate{
+
+        grid-template-columns:1fr;
+
+        gap:1rem;
+
+    }
+
+    .certificate-logo{
+
+        justify-content:flex-start;
+
+    }
+
+    .certificate a{
+
+        margin-top:.5rem;
+
+    }
+
+}
+
+/* ==========================================================
+   CONTACT RESPONSIVE
+========================================================== */
+
+@media(max-width:768px){
+
+    .contact-link{
+
+        grid-template-columns:1fr;
+
+        gap:.75rem;
+
+        text-align:left;
+
+    }
+
+    .contact-link strong{
+
+        justify-self:start;
+
+        word-break:break-word;
+
+    }
+
+    .contact-link span:last-child{
+
+        justify-self:start;
+
+    }
+
+    .contact-description{
+
+        font-size:1rem;
+
+    }
+
+}
+
+/* ==========================================================
+   FOOTER RESPONSIVE
+========================================================== */
+
+@media(max-width:768px){
+
+    .footer-wrapper{
+
+        grid-template-columns:1fr;
+
+        text-align:center;
+
+    }
+
+    .footer-left{
+
+        order:1;
+
+    }
+
+    .footer-center{
+
+        order:2;
+
+        justify-content:center;
+
+        flex-wrap:wrap;
+
+    }
+
+    .footer-right{
+
+        order:3;
+
+        justify-self:center;
+
+    }
+
+}
+
+@media(max-width:992px){
+
+.hero-grid{
+
+grid-template-columns:1fr;
+
+gap:4rem;
+
+}
+
+.hero-right{
+
+align-items:flex-start;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.hero-heading{
+
+font-size:3rem;
+
+}
+
+.hero-buttons{
+
+flex-direction:column;
+
+}
+
+.hero-stack{
+
+gap:1.5rem;
+
+}
+
+.hero-right blockquote{
+
+font-size:2.4rem;
+
+}
+
+}
+
+/* ==========================================================
+   CURSOR
+========================================================== */
+
+@media(hover:none){
+
+    #cursor-dot,
+
+    #cursor-ring{
+
+        display:none;
+
+    }
+
+}

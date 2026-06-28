@@ -1,0 +1,111 @@
+/* ==========================================================
+   COMMAND PALETTE
+========================================================== */
+
+#command-palette{
+
+    position:fixed;
+
+    inset:0;
+
+    display:none;
+
+    justify-content:center;
+
+    align-items:flex-start;
+
+    padding-top:10vh;
+
+    z-index:999999;
+
+}
+
+#command-palette.open{
+
+    display:flex;
+
+}
+
+.command-overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    background:rgba(0,0,0,.55);
+
+    backdrop-filter:blur(14px);
+
+}
+
+.command-modal{
+
+    position:relative;
+
+    width:min(650px,92%);
+
+    background:var(--bg-secondary);
+
+    border:1px solid var(--border);
+
+    border-radius:16px;
+
+    overflow:hidden;
+
+    box-shadow:0 30px 80px rgba(0,0,0,.35);
+
+}
+
+#command-input{
+
+    width:100%;
+
+    padding:1.3rem 1.5rem;
+
+    border-bottom:1px solid var(--border);
+
+    background:none;
+
+    color:white;
+
+    font-size:1rem;
+
+}
+
+#command-list{
+
+    max-height:420px;
+
+    overflow:auto;
+
+}
+
+.command-item{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:1rem 1.5rem;
+
+    cursor:pointer;
+
+    transition:var(--transition);
+
+}
+
+.command-item:hover,
+
+.command-item.active{
+
+    background:rgba(255,255,255,.04);
+
+}
+
+.command-item span{
+
+    color:var(--text-secondary);
+
+}
