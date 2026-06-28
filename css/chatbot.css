@@ -649,3 +649,33 @@
 
 
 }
+
+/* ==========================================================
+   MOBILE RESPONSIVE
+========================================================== */
+
+@media (max-width: 480px) {
+
+    #assistant{
+
+        right:16px;
+
+        bottom:16px;
+
+    }
+
+    #assistant-window{
+
+        width:calc(100vw - 32px);
+
+        height:70vh;
+
+        max-height:600px;
+
+        right:0;
+
+        bottom:80px;
+
+    }
+
+}

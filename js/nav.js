@@ -1,6 +1,21 @@
 const sections = document.querySelectorAll("section[id]");
 const navLinks = document.querySelectorAll(".nav-links a[href^='#']");
 
+const menuToggle = document.getElementById("menu-toggle");
+const navLinksList = document.getElementById("nav-links");
+
+menuToggle.addEventListener("click", () => {
+    menuToggle.classList.toggle("active");
+    navLinksList.classList.toggle("active");
+});
+
+navLinksList.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", () => {
+        menuToggle.classList.remove("active");
+        navLinksList.classList.remove("active");
+    });
+});
+
 window.addEventListener("scroll", () => {
 
     let current = "";
